@@ -8,13 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   list: string[] = [];
   newItem: string = '';
+  errorMessageItem: string = '';
 
   addItem() {
+    if (!this.newItem) {
+      this.errorMessageItem = 'Please enter a value';
+      return;
+    }
+
     this.list.push(this.newItem);
     this.newItem = '';
   }
 
   updateNewItem(newValue: string) {
     this.newItem = newValue;
+    this.errorMessageItem = '';
   }
 }

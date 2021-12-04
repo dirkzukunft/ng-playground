@@ -10,4 +10,5 @@
     [value]="newItem"
   />
   <button (click)="addItem()">Add</button>
+  <p *ngIf="errorMessageItem">{{ errorMessageItem }}</p>
 </main>
