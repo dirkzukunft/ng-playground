@@ -1,2 +1,13 @@
 <h1>Ng <span class="green">App</span></h1>
-<main>Content</main>
+<main>
+  <ul>
+    <li *ngFor="let item of list">{{ item }}</li>
+  </ul>
+
+  <input
+    #newItemElement
+    (input)="updateNewItem(newItemElement.value)"
+    [value]="newItem"
+  />
+  <button (click)="addItem()">Add</button>
+</main>
