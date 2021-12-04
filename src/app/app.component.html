@@ -1,14 +1,4 @@
 <h1>Ng <span class="green">App</span></h1>
 <main>
-  <ul>
-    <li *ngFor="let item of list">{{ item }}</li>
-  </ul>
-
-  <input
-    #newItemElement
-    (input)="updateNewItem(newItemElement.value)"
-    [value]="newItem"
-  />
-  <button (click)="addItem()">Add</button>
-  <p *ngIf="errorMessageItem">{{ errorMessageItem }}</p>
+  <playground-test-form></playground-test-form>
 </main>
