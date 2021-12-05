@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestInputDecoratorComponent } from './test-input-decorator.component';
+import { InputDecoratorComponent } from './input-decorator.component';
 
-describe('TestInputDecoratorComponent', () => {
-  let component: TestInputDecoratorComponent;
-  let fixture: ComponentFixture<TestInputDecoratorComponent>;
+describe('InputDecoratorComponent', () => {
+  let component: InputDecoratorComponent;
+  let fixture: ComponentFixture<InputDecoratorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TestInputDecoratorComponent ]
+      declarations: [ InputDecoratorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestInputDecoratorComponent);
+    fixture = TestBed.createComponent(InputDecoratorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

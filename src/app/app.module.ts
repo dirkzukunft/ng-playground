@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { TestFormComponent } from './test-form/test-form.component';
-import { TestInputDecoratorComponent } from './test-input-decorator/test-input-decorator.component';
+import { TestModule } from './test/test.module';
 
 @NgModule({
-  declarations: [AppComponent, TestFormComponent, TestInputDecoratorComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent, TestFormComponent],
+  imports: [BrowserModule, TestModule],
   providers: [],
   bootstrap: [AppComponent],
 })
