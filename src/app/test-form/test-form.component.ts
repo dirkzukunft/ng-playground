@@ -24,8 +24,7 @@ export class TestFormComponent implements OnInit {
     this.newItem = '';
   }
 
-  updateNewItem(newValue: string) {
-    this.newItem = newValue;
-    this.errorMessageItem = '';
+  checkError(newValue: string) {
+    if (newValue.length > 0) this.errorMessageItem = '';
   }
 }

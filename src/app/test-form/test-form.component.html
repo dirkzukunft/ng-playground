@@ -4,8 +4,8 @@
 
 <input
   #newItemElement
-  (input)="updateNewItem(newItemElement.value)"
-  [value]="newItem"
+  (input)="checkError(newItemElement.value)"
+  [(ngModel)]="newItem"
 />
 <button (click)="addItem()">Add</button>
 <p *ngIf="errorMessageItem">{{ errorMessageItem }}</p>
