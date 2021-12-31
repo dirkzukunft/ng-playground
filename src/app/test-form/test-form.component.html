@@ -8,4 +8,18 @@
   [(ngModel)]="newItem"
 />
 <button (click)="addItem()">Add</button>
-<p *ngIf="errorMessageItem">{{ errorMessageItem }}</p>
+<ng-container *ngIf="errorMessageItem">{{ errorMessageItem }}</ng-container>
+
+<ng-template #templateName let-myVariable="data">
+  {{ myVariable }}
+</ng-template>
+
+<ng-container
+  *ngTemplateOutlet="templateName; context: { data: 1 }"
+></ng-container>
+<ng-container
+  *ngTemplateOutlet="templateName; context: { data: 2 }"
+></ng-container>
+<ng-container
+  *ngTemplateOutlet="templateName; context: { data: 3 }"
+></ng-container>
