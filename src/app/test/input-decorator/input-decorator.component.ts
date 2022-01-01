@@ -12,6 +12,7 @@ export class InputDecoratorComponent implements OnInit {
   };
   sliceStart = 2;
   sliceEnd = 5;
+  now = Date.now();
 
   constructor() {}
 
