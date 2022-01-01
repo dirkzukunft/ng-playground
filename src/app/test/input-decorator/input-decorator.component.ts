@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataServiceService } from 'src/app/data-service.service';
 
 @Component({
   selector: 'playground-input-decorator',
@@ -11,10 +12,11 @@ export class InputDecoratorComponent implements OnInit {
     key2: 'default value2',
   };
   sliceStart = 2;
-  sliceEnd = 5;
+  sliceEnd = 7;
   now = Date.now();
+  serviceData = this._dataServiceService.sampleData();
 
-  constructor() {}
+  constructor(private _dataServiceService: DataServiceService) {}
 
   ngOnInit(): void {}
 }
