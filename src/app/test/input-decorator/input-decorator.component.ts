@@ -6,7 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./input-decorator.component.css'],
 })
 export class InputDecoratorComponent implements OnInit {
-  @Input() data: string = 'default';
+  @Input() data: { key1: string; key2: string } = {
+    key1: 'default value1',
+    key2: 'default value2',
+  };
 
   constructor() {}
 

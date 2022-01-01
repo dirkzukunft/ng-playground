@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-playground';
-  sampleString = 'Hello World';
+  sampleData = { key1: 'value1', key2: 'value2' };
 }
