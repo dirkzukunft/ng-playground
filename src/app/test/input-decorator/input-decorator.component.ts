@@ -10,6 +10,8 @@ export class InputDecoratorComponent implements OnInit {
     key1: 'default value1',
     key2: 'default value2',
   };
+  sliceStart = 2;
+  sliceEnd = 5;
 
   constructor() {}
 
